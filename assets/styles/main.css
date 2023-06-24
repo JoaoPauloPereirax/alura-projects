@@ -1,6 +1,9 @@
+/*STYLES EXTERNOS*/
+@import url("./header.css");
 /*VARIÁVEIS - CORES*/
 :root{
      --cor-de-fundo: #ebecee;
+     --branco: #fff;
 }
 
 body{
