@@ -12,6 +12,7 @@
      background-color: var(--branco);
      display: flex;
      justify-content: space-between;
+     position: relative;
 }
 
 .container{
@@ -21,4 +22,15 @@
 
 .container-imagem{
      padding: 1em;
+}
+
+.lista-menu{
+     display: none;
+     /*ESTAS DUAS LINHAS COLOCAM O MENU ABAIXO DO BOTÃO*/
+     position: absolute;
+     top: 100%;
+}
+
+.container-botao:checked ~ .lista-menu{
+     display: block;
 }
