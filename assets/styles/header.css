@@ -24,13 +24,36 @@
      padding: 1em;
 }
 
+.container-botao{
+     display: none;
+}
+
 .lista-menu{
      display: none;
      /*ESTAS DUAS LINHAS COLOCAM O MENU ABAIXO DO BOTÃO*/
      position: absolute;
      top: 100%;
+     width: 60vw;
 }
 
 .container-botao:checked ~ .lista-menu{
      display: block;
+}
+
+.lista-menu-titulo,
+.lista-menu-item{
+     padding: 1em;
+     background-color: var(--branco);
+}
+
+.lista-menu-titulo{
+     color: var(--cor-lista-menu-titulo);
+}
+
+.lista-menu-link{
+     background: var(--azul-degrade);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-transform: uppercase;/*DEIXA TODO TEXTO EM MAÚSCULO*/
 }
